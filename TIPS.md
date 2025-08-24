@@ -11,13 +11,13 @@
 
 实时预览
 - 在本地服务器运行时，保存文件后会自动刷新页面
-- jekyll serve -l -H localhost用于修改_config.yml文件
+-  `jekyll serve -l -H localhost` 用于修改 `_config.yml` 文件
 - 在浏览器中查看 http://localhost:4000 查看更改
 
-提交更改（在本地文件夹的git bash而非container中）
-- git add .
-- git commit -m "初始化我的学术网站"
-- git push origin master
+提交更改（在本地文件夹的git bash而非container中）， `master` 是分支
+-  `git add .` 
+-  `git commit -m "更新的信息"` 
+-  `git push origin master` 
 
 检查部署状态
 - 在GitHub仓库中转到 Settings > Pages
