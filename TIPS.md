@@ -15,9 +15,9 @@
 - 在浏览器中查看 http://localhost:4000 查看更改
 
 提交更改（在本地文件夹的git bash而非container中）
-git add .
-git commit -m "初始化我的学术网站"
-git push origin main
+- git add .
+- git commit -m "初始化我的学术网站"
+- git push origin master
 
 检查部署状态
 - 在GitHub仓库中转到 Settings > Pages
