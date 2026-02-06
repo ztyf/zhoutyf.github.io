@@ -2,6 +2,10 @@
    CUSTOM OVERRIDES
    ========================================================================== */
 
+/* Best Paper Award 标签颜色（统一修改此处即可） */
+$publication-award-color    : #c71585;
+$publication-award-bg       : #fff0f5;
+
 /* 拓宽侧边栏以完整显示邮箱 */
 $sidebar-link-max-width     : 320px;
 
@@ -19,4 +23,71 @@ $sidebar-link-max-width     : 320px;
 .page__content a:hover {
   color: inherit;
   text-decoration: underline;
+}
+
+/* Publications 列表：紧凑、小字号 */
+.publications-list {
+  .publications-list__item {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--global-border-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+  .archive__item-title--compact {
+    margin: 0 0 0.25em;
+    font-size: 0.95em;
+    font-weight: 600;
+  }
+  .archive__item-authors {
+    margin: 0 0 0.2em;
+    font-size: 0.85em;
+  }
+  .archive__item-venue {
+    margin: 0;
+    font-size: 0.8em;
+    color: var(--global-text-color-light);
+  }
+  .archive__item-venue .publication-award {
+    margin-left: 0.5em;
+  }
+  .publication-award {
+    margin-left: 0.5em;
+    padding: 0.15em 0.5em;
+    font-size: 0.7em;
+    font-weight: 500;
+    color: $publication-award-color;
+    background-color: $publication-award-bg;
+    border: 1px solid $publication-award-color;
+    border-radius: 3px;
+    text-decoration: none !important;
+  }
+  .archive__item:hover .publication-award {
+    text-decoration: none !important;
+  }
+  .archive__item-citation {
+    margin: 0;
+    font-size: 0.8em;
+    line-height: 1.5;
+    color: var(--global-text-color-light);
+  }
+}
+
+/* Best Paper Award 标签：详情页样式，全局无下划线（含 hover） */
+.publication-award,
+.page .publication-award,
+.archive__item:hover .publication-award {
+  text-decoration: none !important;
+}
+.page .publication-award {
+  margin-left: 0.5em;
+  padding: 0.15em 0.5em;
+  font-size: 0.75em;
+  font-weight: 500;
+  color: $publication-award-color;
+  background-color: $publication-award-bg;
+  border: 1px solid $publication-award-color;
+  border-radius: 3px;
 }

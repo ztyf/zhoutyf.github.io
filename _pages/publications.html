@@ -1,8 +1,18 @@
 ---
-layout: single
+layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-<p style="text-align: center; font-size: 1.2em; color: #999;">Under construction</p>
+{% include base_path %}
+
+{% assign pubs_by_year = site.publications | group_by_exp: "post", "post.date | date: '%Y'" | sort: "name" | reverse %}
+{% for year_group in pubs_by_year %}
+<h2 class="archive__subtitle">{{ year_group.name }}</h2>
+<div class="publications-list">
+{% for post in year_group.items reversed %}
+  {% include archive-single-publication.html %}
+{% endfor %}
+</div>
+{% endfor %}

@@ -1,0 +1,12 @@
+{% include base_path %}
+
+{% assign title = post.title %}
+<div class="list__item publications-list__item">
+  <article class="archive__item">
+    <p class="archive__item-title archive__item-title--compact">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
+    </p>
+    {% if post.authors %}<p class="archive__item-authors">{{ post.authors | markdownify }}</p>{% endif %}
+    <p class="archive__item-venue"><i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}{% if post.award %} <span class="publication-award">{{ post.award }}</span>{% endif %}</p>
+  </article>
+</div>
