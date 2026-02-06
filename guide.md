@@ -57,7 +57,8 @@ bundle exec jekyll serve -l -H localhost
 | `_talks/` | 演讲/报告 |
 | `_teaching/` | 教学信息 |
 | `_data/` | 数据文件（导航、简历 JSON 等） |
-| `assets/` | CSS、JS、字体等静态资源 |
+| `assets/` | CSS、JS、字体等静态资源；修改 `assets/js/_main.js` 后需运行 `npm run build:js` |
+| `_sass/custom.scss` | 自定义样式（侧边栏、正文链接等） |
 | `images/` | 图片资源（建议使用英文文件名） |
 | `files/` | 可下载文件（PDF 等），CV 简历为 `files/cv.pdf` |
 | `guide.md` | 本使用指南（已排除于 Jekyll 构建） |
@@ -164,13 +165,16 @@ git commit -m "更新说明"
 git push origin master
 ```
 
+**注意**：修改 `assets/js/_main.js` 后需运行 `npm run build:js` 重新生成 `main.min.js`。
+
 ---
 
 ## 七、其他
 
 - **导航栏**：当前显示 Home、Publications、Projects、Blog、CV；已隐藏 Talks、Teaching、Guide
 - **CV**：点击直接打开/下载 `files/cv.pdf`，替换该文件即可更新简历
-- **Publications / Projects**：当前为占位页（"Under construction"），可编辑 `_pages/publications.html` 和 `_pages/portfolio.html` 恢复原内容
+- **Publications / Projects / Blog**：当前为占位页（"Under construction"），可编辑 `_pages/publications.html`、`_pages/portfolio.html`、`_pages/year-archive.html` 恢复原内容
 - **上传 PDF**：放入 `files/` 目录，访问 `https://zhoutyf.github.io/files/文件名.pdf`
-- **主题切换**：在 `_config.yml` 中修改 `site_theme`（如 `default`、`air`）
+- **主题**：默认白色模式；在 `_config.yml` 中修改 `site_theme`（如 `default`、`air`）
+- **正文链接**：保持文字颜色、仅下划线（见 `_sass/custom.scss`）
 - **更多帮助**：https://academicpages.github.io/
