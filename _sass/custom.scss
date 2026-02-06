@@ -58,9 +58,9 @@ $sidebar-link-max-width     : 320px;
     padding: 0.15em 0.5em;
     font-size: 0.7em;
     font-weight: 500;
-    color: $publication-award-color;
-    background-color: $publication-award-bg;
-    border: 1px solid $publication-award-color;
+    color: $publication-award-color !important;
+    background-color: $publication-award-bg !important;
+    border: 1px solid $publication-award-color !important;
     border-radius: 3px;
     text-decoration: none !important;
   }
@@ -86,8 +86,8 @@ $sidebar-link-max-width     : 320px;
   padding: 0.15em 0.5em;
   font-size: 0.75em;
   font-weight: 500;
-  color: $publication-award-color;
-  background-color: $publication-award-bg;
-  border: 1px solid $publication-award-color;
+  color: $publication-award-color !important;
+  background-color: $publication-award-bg !important;
+  border: 1px solid $publication-award-color !important;
   border-radius: 3px;
 }
