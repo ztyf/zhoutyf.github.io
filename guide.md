@@ -121,19 +121,19 @@ tags: [标签1, 标签2]
 编辑 `_data/navigation.yml`，增删或调整菜单项。注释掉某项即可从导航栏隐藏（页面仍可通过直接链接访问）：
 
 ```yaml
-# 当前显示：Home、Publications、Projects、Blog、CV
+# 当前显示：Home、CV、Publications、Projects、Blog
 # 当前已隐藏：Talks、Teaching、Guide
 # 取消注释即可恢复显示
 - title: "Home"
   url: /
+- title: "CV"
+  url: /files/cv.pdf
 - title: "Publications"
   url: /publications/
 - title: "Projects"
   url: /portfolio/
 - title: "Blog"
   url: /year-archive/
-- title: "CV"
-  url: /files/cv.pdf
 # - title: "Talks"
 #   url: /talks/
 # - title: "Teaching"
@@ -171,9 +171,9 @@ git push origin master
 
 ## 七、其他
 
-- **导航栏**：当前显示 Home、Publications、Projects、Blog、CV；已隐藏 Talks、Teaching、Guide
-- **CV**：点击直接打开/下载 `files/cv.pdf`，替换该文件即可更新简历
-- **Publications / Projects / Blog**：当前为占位页（"Under construction"），可编辑 `_pages/publications.html`、`_pages/portfolio.html`、`_pages/year-archive.html` 恢复原内容
+- **导航栏**：当前显示 Home、CV、Publications、Projects、Blog；已隐藏 Talks、Teaching、Guide
+- **CV**：点击直接打开/下载 `files/cv.pdf`，替换该文件即可更新简历；当前版本更新至 2026 年 2 月
+- **Publications**：已配置论文列表，可按年份分组展示；Projects、Blog 为占位页
 - **上传 PDF**：放入 `files/` 目录，访问 `https://ztyf.github.io/files/文件名.pdf`
 - **主题**：默认白色模式；在 `_config.yml` 中修改 `site_theme`（如 `default`、`air`）
 - **正文链接**：保持文字颜色、仅下划线（见 `_sass/custom.scss`）

@@ -28,7 +28,7 @@ Hi~ I am Tianyufei Zhou (周天羽菲), an MPhil student in [Data and Systems En
 
 ## Links
 
+- **[CV](/files/cv.pdf)** — Download my resume (Updated Feb 2026)
 - **[Publications](/publications/)** — My publications and papers
 - **[Projects](/portfolio/)** — Research and side projects
 - **[Blog](/year-archive/)** — Blog posts
-- **[CV](/files/cv.pdf)** — Download my resume

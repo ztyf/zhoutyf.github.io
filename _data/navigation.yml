@@ -11,6 +11,9 @@ main:
   - title: "Home"
     url: /
 
+  - title: "CV"
+    url: /files/cv.pdf
+
   - title: "Publications"
     url: /publications/
 
@@ -25,9 +28,6 @@ main:
 
   - title: "Blog"
     url: /year-archive/
-    
-  - title: "CV"
-    url: /files/cv.pdf
     
   # - title: "CV"
   #   url: /cv-json/
