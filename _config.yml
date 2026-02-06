@@ -17,9 +17,9 @@ name                     : &name "Tianyufei Zhou"
 # description              : &description "Master of Philosophy in Data and Systems Engineering, The University of Hong Kong"
 # description              : &description "MPhil in DASE, HKU"
 description              : &description "ZTYF's Personal Website"
-url                      : https://zhoutyf.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog" # 子路径（为空表示在根目录）
-repository               : "zhoutyf.github.io" # GitHub仓库名称
+url                      : https://ztyf.github.io
+baseurl                  : ""
+repository               : "ztyf.github.io" # GitHub 仓库名称（用户页）
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -42,7 +42,7 @@ author:
       name: "NAISS Lab"
       url: "https://naisslab.github.io/"
   
-  uri              : "https://zhoutyf.github.io"
+  uri              : "https://ztyf.github.io"
   emails:
     - address: "czkxiaokeai@gmail.com"
       label: "Gmail"

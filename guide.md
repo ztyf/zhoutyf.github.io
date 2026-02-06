@@ -4,7 +4,7 @@
 
 ## 一、项目简介
 
-- **网站地址**：https://zhoutyf.github.io
+- **网站地址**：https://ztyf.github.io
 - **技术栈**：Jekyll、GitHub Pages
 - **模板**：Academic Pages（源自 Minimal Mistakes）
 
@@ -174,7 +174,9 @@ git push origin master
 - **导航栏**：当前显示 Home、Publications、Projects、Blog、CV；已隐藏 Talks、Teaching、Guide
 - **CV**：点击直接打开/下载 `files/cv.pdf`，替换该文件即可更新简历
 - **Publications / Projects / Blog**：当前为占位页（"Under construction"），可编辑 `_pages/publications.html`、`_pages/portfolio.html`、`_pages/year-archive.html` 恢复原内容
-- **上传 PDF**：放入 `files/` 目录，访问 `https://zhoutyf.github.io/files/文件名.pdf`
+- **上传 PDF**：放入 `files/` 目录，访问 `https://ztyf.github.io/files/文件名.pdf`
 - **主题**：默认白色模式；在 `_config.yml` 中修改 `site_theme`（如 `default`、`air`）
 - **正文链接**：保持文字颜色、仅下划线（见 `_sass/custom.scss`）
 - **更多帮助**：https://academicpages.github.io/
+
+**使用 ztyf.github.io 用户页**：需将 GitHub 仓库重命名为 `ztyf.github.io`（Settings → General → Repository name），然后更新本地 remote：`git remote set-url origin https://github.com/ztyf/ztyf.github.io.git`

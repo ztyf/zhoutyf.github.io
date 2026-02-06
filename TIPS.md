@@ -22,4 +22,4 @@
 检查部署状态
 - 在GitHub仓库中转到 Settings > Pages
 - 查看部署状态，通常几分钟后生效
-- 访问 https://zhoutyf.github.io 查看线上网站
+- 访问 https://ztyf.github.io 查看线上网站
