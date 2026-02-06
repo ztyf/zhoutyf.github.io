@@ -1,3 +1,5 @@
+# 侧边栏作者信息组件
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
@@ -24,16 +26,28 @@ repository               : "zhoutyf.github.io" # GitHub仓库名称
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "头像.jpg"
+  avatar           : "avatar.jpg"
   name             : "Tianyufei Zhou"
+  # name_zh          : "周天羽菲"
   pronouns         : # example: "she/her"  
   # bio              : "Master of Philosophy"
   bio              : "MPhil"
-  employer         : "NAISS Lab"
-  location         : "DASE, HKU"
+  # employer         : "NAISS Lab"
+  # location         : "DASE, HKU"
+  location:
+      name: "DASE, HKU"
+      url: "https://www.dase.hku.hk/"
+
+  employer:
+      name: "NAISS Lab"
+      url: "https://naisslab.github.io/"
   
   uri              : "https://zhoutyf.github.io"
-  email            : "czkxiaokeai@gmail.com" 
+  emails:
+    - address: "czkxiaokeai@gmail.com"
+      label: "Gmail"
+    - address: "tianyufei.zhou@connect.hku.hk"
+      label: "HKU" 
 
   # Academic websites
   academia         : # URL
@@ -171,6 +185,7 @@ include:
   - _pages
   - files
 exclude:
+  - guide.md
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

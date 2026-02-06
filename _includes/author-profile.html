@@ -1,3 +1,5 @@
+<!-- 侧边栏作者信息组件 -->
+
 {% include base_path %}
 
 {% if page.author and site.data.authors[page.author] %}
@@ -37,17 +39,50 @@
     <button class="btn btn--inverse">Follow</button>
     <ul class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
-      {% if author.location %}
+      <!-- {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
+      {% endif %} -->
+
+      {% if author.location %}
+          <li class="author__desktop">
+          {% if author.location.url %}
+            <a href="{{ author.location.url }}">
+              <i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location.name }}
+            </a>
+          {% else %}
+            <i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location.name }}
+          {% endif %}
+        </li>
       {% endif %}
-      {% if author.employer %}
+
+
+      <!-- {% if author.employer %}
         <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
+      {% endif %} -->
+
+      {% if author.employer %}
+          <li class="author__desktop">
+          {% if author.employer.url %}
+            <a href="{{ author.employer.url }}">
+              <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer.name }}
+            </a>
+          {% else %}
+            <i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer.name }}
+          {% endif %}
+        </li>
       {% endif %}
+
       {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Personal Website" }}</a></li>
       {% endif %}
-      {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+
+
+      {% if author.emails %}
+        {% for email in author.emails %}
+        <li><a href="mailto:{{ email.address }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ email.label }}: {{ email.address }}</a></li>
+        {% endfor %}
+      {% elsif author.email %}
+        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ author.email }}</a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->

@@ -41,6 +41,7 @@ en: &DEFAULT_EN
   loading_label              : "Loading..."
 en-US:
   <<: *DEFAULT_EN
+  website_label              : "ZTYF's Personal Website"
 en-CA:
   <<: *DEFAULT_EN
 en-GB:

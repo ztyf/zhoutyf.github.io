@@ -1,0 +1,22 @@
+/* ==========================================================================
+   CUSTOM OVERRIDES
+   ========================================================================== */
+
+/* 拓宽侧边栏以完整显示邮箱 */
+$sidebar-link-max-width     : 320px;
+
+/* 允许侧边栏邮箱链接换行显示 */
+.sidebar .author__urls li {
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+/* 正文链接：保持文字颜色，仅下划线 */
+.page__content a {
+  color: inherit;
+  text-decoration: underline;
+}
+.page__content a:hover {
+  color: inherit;
+  text-decoration: underline;
+}
